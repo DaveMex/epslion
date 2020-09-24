@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corporativo Epslion. Planeación, construcción, supervisión y administración de proyectos de ingeniería, así como consultoría a través de estudios de factibilidad y análisis de procesos.">
+    <title>Epslion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css" integrity="sha512-uBLaY+6crwV4JAHILx0HWvYncrX7TXL770hqxly0ZsQ199v4lr2yNB2jiPMoxNajFPHSQnU80B1O8dJLujWZMg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logotipo"><a href="index.html"><img class="logo" src="assets/epslion-logo_horizontal-gris.svg" alt="Logo Epslion."></a></div>
+        <nav>
+            <ul class="indice">
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="maquinaria.html">Maquinaria</a></li>
+                <li><a href="catalogo.html">Catálogo fotográfico</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+                <li><a class="current" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form action="contacto.php" method="post">
+                <div class="elem-group">
+                  <label for="name">Tu nombre</label>
+                  <input type="text" id="name" name="visitor_name" placeholder="Juan Perez" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                  <label for="email">Tu E-mail</label>
+                  <input type="email" id="email" name="visitor_email" placeholder="juan.perez@email.com" required>
+                </div>
+                <div class="elem-group">
+                  <label for="department-selection">Elige área a contactar</label>
+                  <select id="department-selection" name="departamento" required>
+                      <option value="">Selecciona Departamento</option>
+                      <option value="direccion">Dirección</option>
+                      <option value="ingenieria">Ingeniería</option>
+                      <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div class="elem-group">
+                  <label for="title">Razón para contactarnos</label>
+                  <input type="text" id="title" name="email_title" required placeholder="Escribir razón" pattern=[A-Za-z0-9\s]{8,60}>
+                </div>
+                <div class="elem-group">
+                  <label for="message">Escribe tu mensaje</label>
+                  <textarea id="message" name="visitor_message" placeholder="Aquí va lo que quieras decir" required></textarea>
+                </div>
+                <button type="submit">Mandar mensaje</button>
+              </form>
+        </main>
+        <footer><p>© Corporativo Epslion 2020.</p></footer>
+    </div>
+</body>
+</html>

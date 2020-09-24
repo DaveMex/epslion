@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,500;0,900;1,200;1,500&display=swap');
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: #e4e4e4;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px auto 1fr;
+    grid-template-areas:
+    "logo . nav"
+    ". main main"
+    "footer footer footer";
+    column-gap: .5rem;
+}
+.logotipo {
+    grid-area: logo;
+}
+main {
+    grid-area: main;
+}
+nav {
+    grid-area: nav;
+    writing-mode: vertical-rl;
+}
+ul {
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    height: 30vh; */
+    margin-right: .8rem;
+    /* background-color: #ffa500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transform: rotate(90deg); */
+}
+ul li{
+    /* margin: 0 1.6rem; */
+    padding: 1rem .8rem;
+
+    font-size: .8rem;
+}
+ul li a{
+    font-weight: 200;
+    color: #fff6e8;
+    background-color: #222222;
+    text-decoration: none;
+    padding: 1rem .8rem;
+    /* border: 1px solid #ffffff; */
+}
+ul li a:hover{
+    color: #222222;
+    background-color: #ffa500;
+    border: 1px solid #222222;
+}
+.current {
+    background-color: #ffffff;
+    color: #222222;
+    /* border: 1px solid #222222; */
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #222222;
+    padding: 1rem;
+    border-bottom: solid 2px #b9b9b9;
+    border-top: solid 5px #222222;
+}
+h4 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #222222;
+    padding: 1rem;
+    border-bottom: solid 2px #b9b9b9;
+    border-top: solid 5px #222222;
+}
+main p {
+    line-height: 1.8rem;
+    padding: 1rem;
+    color: #222222;
+}
+.logo {
+    width: 320px;
+    padding: .5rem;
+}
+footer {
+	/* position: fixed;
+    bottom: 0;
+    width: 100%; */
+    text-align: center;
+    color: #ffffff;
+    background-color: #222222;
+    grid-area: footer;
+    margin-top: 2rem;
+}
+footer p {
+    padding: 1rem;
+    font-size: .7rem;
+    font-weight: 200;
+}
+
+th, td {
+    padding: .4rem 1rem;
+}
+tr {
+    border-bottom: solid 1px #b9b9b9;
+}
+
+
+/* Formulario en contacto */
+
+div.elem-group {
+    margin: 1.2rem 0;
+}
+  
+label {
+    display: block;
+    /* font-family: 'Aleo'; */
+    padding-bottom: 4px;
+    font-size: 1.25em;
+}
+  
+input, select, textarea {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Epilogue', sans-serif;
+    width: 80%;
+    padding: 8px;
+}
+  
+textarea {
+    height: 250px;
+}
+  
+button {
+    height: 50px;
+    background: #222222;
+    color: white;
+    border: 2px solid #b9b9b9;
+    font-size: 1.25em;
+    font-family: 'Epilogue', sans-serif;;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background: #ffa500;
+    color: #222222;
+    border: 2px solid #222222;
+}
